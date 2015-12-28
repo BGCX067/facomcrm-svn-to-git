@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+    <title>mobbi: novo cadastro</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="assets/stylesheet/main.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a id="logo-header" class="brand" href="#">
+          	mobbi / 
+          	<span class="dstq">novacap imobiliária</span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#">Painel</a></li>
+              <li><a href="#about">Usuários</a></ltri>
+              <li class="active"><a href="#contact">Cadastros</a></li>
+              <li><a href="#contact">Imóveis</a></li>
+              <li><a href="#contact">Contratos</a></li>
+              <li><a href="#contact">Sistema e Configurações</a></li>
+              <li><a href="#contact">Sair</li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span11">
+        
+		      <ul class="breadcrumb">
+						<li><a href="#">Cadastros</a> <span class="divider">/</span></li>
+						<li class="active">Novo cadastro</li>
+					</ul>
+        
+        	<h2>
+        		Novo cadastro
+        	</h2>
+        	
+        	<form class="form-horizontal">
+        	
+						<fieldset>
+							<legend>Tipo de cadastro</legend>
+							
+							<div class="control-group">
+								<label class="control-label">Selecione o tipo de cadastro:</label>
+								<div class="controls">
+									
+									<label class="radio">
+										<input type="radio" name="tipo" id="optionsRadios1" value="PJ" checked>
+										<b>Pessoa física</b> <br/>
+										Caso o cadastro seja de uma pessoa comum, com RG, CPF e etc.
+									</label>
+									<label class="radio">
+										<input type="radio" name="tipo" id="optionsRadios2" value="PF">
+										<b>Pessoa jurídica</b> <br/>
+										Caso o cadastro seja de uma empresa com CNPJ, inscrição estadual e etc.
+									</label>
+									
+								</div>
+							</div>
+						</fieldset>
+						
+						<fieldset id="fildset-pf">
+							<legend>Pessoa física</legend>
+							<div class="control-group">
+								<label class="control-label required" for="input-nome">Nome*</label>
+								<div class="controls">
+									<input type="text" id="input-nome" name="cadastro.nome">
+									<span class="help-inline">Nome e sobrenome(s). Ex: João Aquino Silveira</span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-rg">RG</label>
+								<div class="controls">
+									<input type="text" id="input-rg" name="cadastro.rg">
+									<span class="help-inline">Apenas os números e as letras</span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-orgao-emissor">Orgão emissor</label>
+								<div class="controls">
+									<input type="text" id="input-orgao-emissor" name="cadastro.orgaoEmissor">
+									<span class="help-inline">Exemplo: SSP/MS, SJTS/SP, etc</span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label required" for="input-cpf">CPF*</label>
+								<div class="controls">
+									<input type="text" id="input-cpf" name="cadastro.cpf">
+								</div>
+							</div>
+							<hr/>
+							<div class="control-group">
+								<label class="control-label" for="select-estado-civil">Estado cívil</label>
+								<div class="controls">
+								
+									<select id="select-estado-civil" name="cadastro.estadoCivil">
+										<option value="casado">Casado(a)</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                		<option value="viuvo">Viuvo(a)</option>
+                    <option value="separado">Separado(a)</option>
+									</select>
+									
+									<hr/>
+									
+									<div class="control-group">
+										<div class="controls">
+											<h4>Dados do conjuge</h4>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="input-nome">Nome do conjuge</label>
+										<div class="controls">
+											<input type="text" id="input-nome" name="cadastro.nome">
+											<span class="help-inline">Nome e sobrenome(s). Ex: João Aquino Silveira</span>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="input-rg">RG do Conjugue</label>
+										<div class="controls">
+											<input type="text" id="input-rg" name="cadastro.rg">
+											<span class="help-inline">Apenas os números e as letras</span>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="input-orgao-emissor">Orgão emissor</label>
+										<div class="controls">
+											<input type="text" id="input-orgao-emissor" name="cadastro.orgaoEmissor">
+											<span class="help-inline">Exemplo: SSP/MS, SJTS/SP, etc</span>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="input-cpf">CPF</label>
+										<div class="controls">
+											<input type="text" id="input-cpf" name="cadastro.cpf">
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</fieldset>
+						
+						<fieldset id="fildset-pj">
+							<legend>Pessoa Jurídica</legend>
+							<div class="control-group">
+								<label class="control-label required" for="input-razao-social">Razão Social*</label>
+								<div class="controls">
+									<input type="text" id="input-razao-social" name="cadastro.razaoSocial">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-razao-social">Nome fantasia</label>
+								<div class="controls">
+									<input type="text" id="input-nome-fantasia" name="cadastro.nomeFantasia">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label required" for="input-cnpj">CNPJ*</label>
+								<div class="controls">
+									<input type="text" id="input-cnpj" name="cadastro.cnpj">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-inscricao-estadual">Incrição estadual</label>
+								<div class="controls">
+									<input type="text" id="input-inscricao-estadual" name="cadastro.inscricaoEstadual">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-inscricao-municipal">Incrição municipal</label>
+								<div class="controls">
+									<input type="text" id="input-inscricao-municipal" name="cadastro.inscricaoMunicipal">
+								</div>
+							</div>
+							<hr/>
+							
+							<div class="control-group">
+								<div class="controls">
+									<h4>Responsável pela personalidade jurídica</h4>
+								</div>
+							</div>
+							
+							<div class="control-group">
+								<label class="control-label" for="select-responsavel">Responsável</label>
+								<div class="controls">
+									<select id="select-responsavel" name="cadastro.responsavel">
+										<option value="responsavel">Jairo Ricardes Rodrigues Filho</option>
+										<option value="responsavel">Rosilene dos Santos Araújo</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="control-group">
+								<label class="control-label" for="select-cargo">Cargo</label>
+								<div class="controls">
+									<input type="text" id="input-cargo" name="cadastro.cargo"/>
+									<span class="help-inline">Ex: Diretor, Diretor Comercial, Presidênte, Dono, etc</span>
+								</div>
+							</div>
+							
+						</fieldset>
+						
+						<fieldset>
+							<legend>Contato</legend>
+							<div class="control-group">
+								<label class="control-label" for="input-telefone">Telefone nº 1</label>
+								<div class="controls">
+									<input type="text" id="input-telefone" name="cadastro.telefone">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-telefone2">Telefone nº 2</label>
+								<div class="controls">
+									<input type="text" id="input-telefone2" name="cadastro.telefone2">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-fax">Fax</label>
+								<div class="controls">
+									<input type="text" id="input-fax" name="cadastro.fax">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-email">E-mail</label>
+								<div class="controls">
+									<input type="text" id="input-email" name="cadastro.email">
+								</div>
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<legend>Endereço</legend>
+							<div class="control-group">
+								<label class="control-label" for="input-cep">CEP</label>
+								<div class="controls">
+									<input type="text" id="input-cep" name="cadastro.cep">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-logradouro">Logradouro</label>
+								<div class="controls">
+									<input type="text" id="input-nome" name="cadastro.nome">
+									<span class="help-inline">Ex: Rua Grajaúna, Avenida Afonso Pena, etc.</span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-numero">Número</label>
+								<div class="controls">
+									<input type="text" id="input-numero" name="cadastro.numero">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-complemento">Complemento</label>
+								<div class="controls">
+									<input type="text" id="input-complemento" name="cadastro.complemento">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-bairro">Bairro</label>
+								<div class="controls">
+									<input type="text" id="input-bairro" name="cadastro.bairro">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input-cidade">Cidade</label>
+								<div class="controls">
+									<input type="text" id="input-cidade" name="cadastro.cidade">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="select-estado">Estado</label>
+								<div class="controls">
+									<select id="select-estado" name="cadastro.estado">
+										<option value="MS">MS</option>
+                    <option value="SP">SP</option>
+                    <option value="MG">MG</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+						
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Cadastrar dados</button>
+							<button type="button" class="btn">Cancelar</button>
+						</div>
+					</form>
+        	
+        	
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy;mobbi gestão imobiliária</p>
+      </footer>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

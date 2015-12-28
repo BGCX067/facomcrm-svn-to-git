@@ -1,0 +1,74 @@
+
+                                    FACOMCRM
+                            PROGWEB / FACOM / UFMS
+                                    GRUPO 1
+
+Trabalho desenvolvido para disciplina de Programação Web da Faculdade de
+Computação da Universidade Federal do MS.
+
+A idéia do projeto é auxiliar uma pequena empresa a gerenciar seus contatos
+comerciais, tais como clientes e fornecedores a fim de agilizar os processos,
+ter uma maior confiabilidade e disponibilidade de dados.
+
+Fazer o pequeno empreendedor, invés de faz suas anotações no papel, registrar
+em um sistema simples e de baixo custo, sem as complicações e funcionalidades
+exageradas dos grandes CRMs.
+
+BIBLIOTECAS de 3rd
+------------------
+    * Twitter Boostrap (http://twitter.github.com/bootstrap/)
+    * JQuery 1.8
+    * JQuery UI 1.10
+
+FERRAMENTAS de desenvolvimento utilizadas
+-----------------------------------------
+    * Netbeans
+    * Eclipse
+    * MySQL Workbench
+
+INSTALAÇÃO
+----------
+
+    * Instalar apache 2+
+    * Instalar php 5.2+
+    * Instalar mysql 5
+    * Instalar biblioteca PDO
+    * Realizar a importação do dump do banco de dados localizado na pasta
+        db/facomcrm_dump.sql
+    * No php.ini:
+        * Ativar short open tag (descomentar a parte que aparece short_open_tag,
+          alterar de Off para On parte short_open_tag = Off)
+        * Ativar mb_string (descomentar extension=php_mbstring.dll)
+    * No httpd.conf
+        * Ativar modulo rewrite
+    * Usar um navegador que suporte HTML 5 e CSS3
+    * Ter javascript habilitado
+
+GRUPO1
+------
+
+    João Paulo Gomes de Andrade
+    jpgajpga@gmail.com
+    9233-3167 (claro)
+    Gtalk:  jpgajpga@gmail.com
+
+    Marcelo Carvalho Jara
+    juninhojara@gmail.com
+    9633-9922 (vivo)
+    Gtalk: juninhojara@gmail.com
+
+    Jairo Ricardes Rodrigues Filho
+    jairocgr@gmail.com
+    8445-0179 (oi)
+    9168-2511 (claro)
+    skype: jairoricardesrodrigues
+
+    Angelo Maggioni e Silva
+    angelo.maggioni.silva@gmail.com
+    9184-9125 (claro)
+    9642-0737 (vivo)
+    skype: angelo_xistu
+
+    Filipe Augusto (Pastor)
+    filipe.aug.souza@gmail.com
+    8179-7987(tim)

@@ -1,0 +1,95 @@
+
+a { cursor:pointer; }
+
+body {
+	padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+.nav-header {
+	font:normal bold 20px/22px arial;
+	padding-bottom:8px;
+	text-transform:none;
+	color:#333;
+}
+
+form legend {
+	margin-bottom:6px;
+}
+
+#logo-header {
+	background:url("../images/home48.png") -4px 0 no-repeat;
+	text-transform: lowercase;
+	padding-left:52px;
+	padding-right:6px;
+}
+#logo-header .dstq {
+	color: #DDD;
+}
+#logo-header:hover * {
+	color:#EEE;
+}
+
+label.required { font-weight:bold; }
+
+.std-info-card {
+	font:normal normal 13px/16px arial;
+}
+.std-info-card .title { font-size:130%; font-weight:bold; display:block; color:#333; }
+.std-info-card .title:hover { text-decoration:none; color:#000; }
+
+.table td { font:normal normal 14px/16px arial; }
+.table thead td {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.table tr:last-child td { border-bottom:1px solid #CCC !important; }
+
+.icon-phone {
+	display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background: url("../images/phone.png") -2px -2px no-repeat;
+ }
+
+.pagination-wrapper .pagination-label {
+	float:left; margin:25px 10px 0 10px;
+}
+.pagination-wrapper .pagination {
+	float:left;
+}
+
+.highlight-box {
+  display:block;
+	background:url(../images/light-gray-gradient.jpg) top center repeat-x #FDFDFD;
+  border:1px solid #dedede;
+  border-top:2px solid #222;
+  padding:20px;
+  box-shadow:1px 0 4px #EEE;
+  margin-bottom:18px;
+}
+
+.std-key-value-box {
+	font-size:13px;
+	line-height:16px;
+	margin-bottom:10px;
+}
+.std-key-value-box .value {
+	font-weight:bold;
+	font-size:120%;
+	color:#222;
+	display:block;
+}
+
+
+
+

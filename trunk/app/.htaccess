@@ -1,0 +1,32 @@
+RewriteEngine On
+
+# Esconder a extensão ".php"
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+
+RewriteRule ^novo-usuario$ usuario_novo.php
+RewriteRule ^cadastrar-usuario$ usuario_cadastrar.php
+RewriteRule ^login$ login.php
+RewriteRule ^home$ index.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^contatos$ pessoa_listar.php
+RewriteRule ^novo-contato$ pessoa_novo.php
+RewriteRule ^cadastrar-contato$ pessoa_cadastrar.php
+RewriteRule ^nova-anotacao$ anotacao_novo.php
+RewriteRule ^cadastrar-anotacao$ anotacao_cadastrar.php
+RewriteRule ^buscar-contato$ pessoa_buscar.php
+
+RewriteRule ^form-editar-contato$ pessoa_form_editar.php
+RewriteRule ^editar-contato$ pessoa_editar.php
+RewriteRule ^deletar-contato$ pessoa_deletar.php
+
+RewriteRule ^anotacoes$ anotacao_listar.php
+RewriteRule ^deletar-anotacao$ anotacao_deletar.php
+RewriteRule ^editar-anotacao$ anotacao_editar.php
+RewriteRule ^form-editar-anotacao$ anotacao_form_editar.php
+RewriteRule ^alterar-senha$ usuario_form_editar_dados.php
+RewriteRule ^editar-dados-usuario$ usuario_editar_dados.php
+
+
+RewriteRule ^exibir-auditoria$ auditoria_listar.php
